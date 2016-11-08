@@ -30,4 +30,8 @@ export default defineMessages({
     id: 'boilerplate.containers.HomePage.features.Button',
     defaultMessage: 'Features',
   },
+  aboutButton: {
+    id: 'boilerplate.containers.HomePage.about.Button',
+    defaultMessage: 'About',
+  },
 });

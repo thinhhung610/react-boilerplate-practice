@@ -5,6 +5,8 @@ import A from 'components/A';
 import styles from './styles.css';
 import { FormattedMessage } from 'react-intl';
 import LocaleToggle from 'containers/LocaleToggle';
+import MenuProvider from 'containers/MenuProvider';
+import MenuToggle from 'containers/MenuToggle';
 
 function Footer() {
   return (
@@ -16,6 +18,12 @@ function Footer() {
       </section>
       <section>
         <LocaleToggle />
+      </section>
+      <section>
+        <MenuProvider />
+      </section>
+      <section>
+        <MenuToggle />
       </section>
       <section>
         <p>

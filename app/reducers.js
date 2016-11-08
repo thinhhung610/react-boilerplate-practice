@@ -9,6 +9,8 @@ import { LOCATION_CHANGE } from 'react-router-redux';
 
 import globalReducer from 'containers/App/reducer';
 import languageProviderReducer from 'containers/LanguageProvider/reducer';
+import menuProviderReducer from 'containers/MenuProvider/reducer';
+import menuToggleReducer from 'containers/MenuToggle/reducer';
 
 /*
  * routeReducer
@@ -46,6 +48,8 @@ export default function createReducer(asyncReducers) {
     route: routeReducer,
     global: globalReducer,
     language: languageProviderReducer,
+    menu: menuProviderReducer,
+    menuToggle: menuToggleReducer,
     ...asyncReducers,
   });
 }
